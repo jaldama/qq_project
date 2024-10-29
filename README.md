@@ -18,6 +18,6 @@ Options:
 
 -ls --list (List contents of remote Script Server ticket directory)
 
--cp -copy (Copy contents from remote Script Server ticket directory to local current directory)
+-cp --copy (Copy contents from remote Script Server ticket directory to local current directory)
 
 -gui --graphical (Start a web server serving the contents of the directory, and opens web page to server address)
