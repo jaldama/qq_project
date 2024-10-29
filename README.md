@@ -4,8 +4,11 @@
 For Viewing/Downloading files from VCF script server
 
 Requirements:
+
 Python 3.6 or >
+
 Must be on VPN
+
 Unique Script Server entry in .ssh/config file
 
 
