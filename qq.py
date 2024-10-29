@@ -158,6 +158,11 @@ def main():
 
     args = parser.parse_args()
 
+    # Check if no arguments were provided and display help
+    if not any(vars(args).values()):
+        parser.print_help()
+        sys.exit(0)
+
     actions = {
         'list': (args.list, list_directory),
         'copy': (args.copy, rsync_directory),
