@@ -15,6 +15,7 @@ Syntax:
 qq -[Option] HOST_ENTRY TICKET_NUMBER
 
 Options:
+
 -ls --list (List contents of remote Script Server ticket directory)
 
 -cp -copy (Copy contents from remote Script Server ticket directory to local current directory)
