@@ -31,7 +31,7 @@ usage: qq HOSTNAME [-ls] [-cp] [-gui] TICKET
 List and copy compressed files from script server to local.
 
 positional arguments:
-  hostname              The hostname of the script server.
+  hostname              The .ssh/config hostname of the script server.
 
 optional arguments:
   -h, --help            show this help message and exit
