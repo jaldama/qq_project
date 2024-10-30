@@ -152,14 +152,16 @@ def capture_port(url):
     return port_number
 
 def main():
-    parser = argparse.ArgumentParser(description="List and copy compressed files from script server to local.")
-    parser.add_argument('-ls', '--list', type=str, nargs=2, metavar=('hostname', 'ticket'), help='List ticket directory contents.')
-    parser.add_argument('-cp', '--copy', type=str, nargs=2, metavar=('hostname', 'ticket'), help='Copy regular files from script server to local.')
-    parser.add_argument('-gui', '--graphical', type=str, nargs=2, metavar=('hostname', 'ticket'), help='Create a graphical interface for downloading items in ticket directory.')
+    usage_message = "qq hostname [-ls] [-cp] [-gui] ticket"
+    parser = argparse.ArgumentParser(usage=usage_message, description="List and copy compressed files from script server to local.")
+    parser.add_argument('hostname', type=str, help='The hostname of the script server.')
+    parser.add_argument('-ls', '--list', metavar='ticket', type=str, help='List ticket directory contents.')
+    parser.add_argument('-cp', '--copy', metavar='ticket', type=str, help='Copy regular files from script server to local.')
+    parser.add_argument('-gui', '--graphical', metavar='ticket', type=str, help='Create a graphical interface for downloading items in ticket directory.')
 
     args = parser.parse_args()
 
-    # Check if no arguments were provided and display help
+    # Check if no options were provided and display help
     if not any(vars(args).values()):
         parser.print_help()
         sys.exit(0)
@@ -170,10 +172,9 @@ def main():
         'graphical': (args.graphical, gui_server),
     }
 
-    for action, (arg, func) in actions.items():
-        if arg:
-            hostname, ticket = arg
-            func(hostname, ticket)
+    for action, (ticket, func) in actions.items():
+        if ticket:
+            func(args.hostname, ticket)
 
     #os.system('printf "\e[?2004l"') # Safety system call for ending bracketed-paste. Uncomment if pasted output frequently captures ANSI Escape characters
 
