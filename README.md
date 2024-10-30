@@ -16,12 +16,18 @@ Script will attempt to install Pexpect via PIP if not already present
 
 
 Syntax:
-qq -[Option] HOST_ENTRY TICKET_NUMBER
+usage: qq hostname [-ls] [-cp] [-gui] ticket
 
-Options:
+```List and copy compressed files from script server to local.```
 
--ls --list (List contents of remote Script Server ticket directory)
+positional arguments:
+  hostname              The hostname of the script server.
 
--cp --copy (Copy contents from remote Script Server ticket directory to local current directory)
-
--gui --graphical (Start a web server serving the contents of the directory, and opens web page to server address)
+optional arguments:
+  -h, --help            show this help message and exit
+  -ls ticket, --list ticket
+                        List ticket directory contents.
+  -cp ticket, --copy ticket
+                        Copy regular files from script server to local.
+  -gui ticket, --graphical ticket
+                        Create a graphical interface for downloading items in ticket directory.
