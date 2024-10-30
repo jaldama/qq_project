@@ -9,7 +9,13 @@ Python 3.6 or >
 
 Must be on VPN
 
-Unique Script Server entry in .ssh/config file
+Unique Script Server entry in .ssh/config file. Example of '~/.ssh/config' entry:
+
+Host scriptsrver
+    HostName scriptserver.server.com
+    User Josh
+    IdentityFile ~/.ssh/id_rsa
+
 
 
 Script will attempt to install Pexpect via PIP if not already present
