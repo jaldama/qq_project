@@ -2,8 +2,9 @@
 
 
 For Viewing/Downloading files from VCF script server directly to local
-
+```
 Requirements:
+Pexpect Library --- #Script will attempt to install Pexpect via PIP if not already present
 
 Python 3.6 or >
 
@@ -11,7 +12,7 @@ Must be on VPN
 
 Unique Script Server entry in .ssh/config file. Example of '~/.ssh/config' entry:
 
-```
+
 Host scriptsrver
     HostName scriptserver.server.com
     User Josh
@@ -21,7 +22,6 @@ Host scriptsrver
 
 
 
-Script will attempt to install Pexpect via PIP if not already present
 
 
 Syntax:
