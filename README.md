@@ -23,7 +23,8 @@ Script will attempt to install Pexpect via PIP if not already present
 
 
 Syntax:
-```usage: qq hostname [-ls] [-cp] [-gui] ticket
+```
+usage: qq hostname [-ls] [-cp] [-gui] ticket
 
 List and copy compressed files from script server to local.
 
