@@ -1,7 +1,7 @@
 # qq_CLI
 
 
-For Viewing/Downloading files from VCF script server
+For Viewing/Downloading files from VCF script server directly to local
 
 Requirements:
 
