@@ -23,9 +23,9 @@ Script will attempt to install Pexpect via PIP if not already present
 
 
 Syntax:
-usage: qq hostname [-ls] [-cp] [-gui] ticket
+```usage: qq hostname [-ls] [-cp] [-gui] ticket
 
-```List and copy compressed files from script server to local.```
+List and copy compressed files from script server to local.
 
 positional arguments:
   hostname              The hostname of the script server.
@@ -37,4 +37,4 @@ optional arguments:
   -cp ticket, --copy ticket
                         Copy regular files from script server to local.
   -gui ticket, --graphical ticket
-                        Create a graphical interface for downloading items in ticket directory.
+                        Create a graphical interface for downloading items in ticket directory.```
