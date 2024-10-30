@@ -26,7 +26,7 @@ Host scriptsrver
 
 Syntax:
 ```
-usage: qq hostname [-ls] [-cp] [-gui] ticket
+usage: qq HOSTNAME [-ls] [-cp] [-gui] TICKET
 
 List and copy compressed files from script server to local.
 
