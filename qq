@@ -108,6 +108,7 @@ def rsync_directory(hostname, ticket):
                     print(f"\r{line.strip()}", end="")
                     sys.stdout.flush()
             process.wait()
+            print()
 
         except subprocess.CalledProcessError as e:
             print("Error occurred:")
