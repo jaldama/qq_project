@@ -40,4 +40,4 @@ optional arguments:
   -cp ticket, --copy ticket
                         Copy regular files from script server to local.
   -gui ticket, --graphical ticket
-                        Create a graphical interface for downloading items in ticket directory.```
+                        Create a Web interface for downloading/viewing items in ticket directory.```
