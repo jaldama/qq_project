@@ -37,7 +37,7 @@ def ssh_login(hostname):
     try:
         s = pxssh.pxssh()
         #s.logfile = open('ssh_log.txt', 'wb') #---Uncomment line for prompt Logging
-        s.login(hostname, ssh_config=ssh_config_path)
+        s.login(hostname, ssh_config=ssh_config_path, sync_multiplier=5)
         s.sendline('export PS1="[PEXPECT]\\$ "')
         s.prompt()
         return s
